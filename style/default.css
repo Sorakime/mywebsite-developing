@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+/*body and, general settings*/
+body{
+  margin: 0; padding: 0; border: 0;
+  box-sizing: border-box;
+
+}
+*{
+  font-family: 'Noto Sans JP',sans-serif;
+  font-weight: 100;
+  margin: 0; padding: 0;
+}
+
+/*header and, main, footer*/
+header{
+  display: block; position: fixed;
+  top: 0; left: 0; right: 0;
+  padding-left: 10px;
+  height: 60px;
+  background-color: #eee;
+  z-index: 9999;
+}
+header > h1 > span{
+  display: inline;
+  font-size: 10px;
+}
+main{
+  display: block; position: absolute;
+  top: 60px; left: 0; right: 0;
+  z-index: 1000;
+}
+footer{
+  display: block;
+  position: relative;
+  padding: 5px;
+  text-align: center;
+}
+
+/*charcter tags*/
+/*h1, h2, h3, h4, h5, h6, p, a, pre, code, b, strong, em, del, ins, abbr, dfn, blockquote, q, cite, sub, sup, var, kbd, samp, ul, li, ol, */
+
+h1{
+  font-size: 35px;
+}
+h2{
+  font-size: 27px;
+}
+h3{
+  font-size: 24px;
+}
+h4{
+  font-size: 21px;
+}
+h5{
+  font-size: 19px;
+}
+h6{
+  font-size: 14px;
+}

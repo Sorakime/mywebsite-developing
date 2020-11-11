@@ -1,0 +1,42 @@
+view-top{
+  box-sizing: content-box;
+  display: block;
+  width: calc(100vw - 40px);
+  height: calc(100vh - 85px);
+  margin: 12.5px;
+  background-image: url('../images/yt_cover.JPG');
+  background-position: center; background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s 0s cubic-bezier(.45,.05,.55,.95);
+  box-shadow: 20px 20px 150px #c5c5c5;
+}
+view-top:hover, view-bottom:hover{
+  box-shadow: 20px 20px 100px #989898;
+}
+
+view-big{
+  display: block;
+  position: relative;
+  box-sizing: content-box;
+  color: #262626;
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  padding-top: calc(calc(100vh - 85px) / 2 - 45px);
+  z-index: 9998;
+  user-select: none;
+}
+
+view-bottom{
+  box-sizing: content-box;
+  display: block;
+  width: calc(100vw - 40px);
+  height: calc(100vh - 85px);
+  margin: 12.5px;
+  margin-top: 25px;
+  background-image: url('../images/mncr_logo.png');
+  background-position: center; background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s 0s cubic-bezier(.45,.05,.55,.95);
+  box-shadow: 20px 20px 150px #c5c5c5;
+}
