@@ -19,6 +19,7 @@ header{
   height: 60px;
   background-color: #eee;
   z-index: 9999;
+  user-select: none;
 }
 header > h1 > span{
   display: inline;

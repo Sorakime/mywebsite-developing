@@ -1,12 +1,12 @@
 monochrome License.
-Version 1.0
+Version 1.1
 by monochrome.
 
 
 1 複製や変更の公開、派生バージョンの作成について
 	複製はしてもらってOKです。また、変更されるのもOKです。
 	変更して二次公開する場合には、公開するページに
-	https://sorakime.github.io/mncr/license
+	https://sorakime.github.io/mncr/license?v=1.1
 	に、何らかの方法で飛べる方法を用意してください。
 	また、ブラウザ上のHTMLファイルを表示するものであって、スクリーンショットやこのサイトに似たサイトを表示させるのは禁止です。
 	スクリーンショットをクリックしてサイトに飛べるようにする、とかはOKです。
