@@ -5,6 +5,8 @@ header {
   width: 100vw;
   position: fixed;
   left: 0; right: 0;
+  margin: 0; padding: 0;
+  z-index: 9999;
 }
 header:nth-child(1), header:nth-child(1) > p {
   height: 10px;
