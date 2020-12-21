@@ -15,4 +15,8 @@ header:nth-child(1), header:nth-child(1) > p:nth-child(1) {
 }
 header:nth-child(1) > p:nth-child(2) {
   font-size: 7.5px;
+  display: inline-block;
+}
+header:nth-child(1) > p:nth-child(1) {
+  display: inline-block;
 }
