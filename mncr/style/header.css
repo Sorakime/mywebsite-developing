@@ -8,7 +8,11 @@ header {
   margin: 0; padding: 0;
   z-index: 9999;
 }
-header:nth-child(1), header:nth-child(1) > p {
+header:nth-child(1), header:nth-child(1) > p:nth-child(1) {
+  background-color: #fff;
   height: 10px;
-  font-size: 8.5px;
+  font-size: 10px;
+}
+header:nth-child(1) > p:nth-child(2) {
+  font-size: 7.5px;
 }
