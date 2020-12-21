@@ -3,7 +3,7 @@ header {
   position: fixed;
   left: 0; right: 0;
 }
-header:nth-child(1), header:nth-child(1)>p {
+header:nth-child(1), header:nth-child(1) > p {
   height: 10px;
   font-size: 8.5px;
 }
