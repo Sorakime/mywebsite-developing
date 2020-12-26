@@ -1,0 +1,54 @@
+a{
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  width: inherit; height: inherit;
+}
+body{
+  padding: 0; margin: 0;
+  background-color: #252525;
+}
+header{
+  text-align: center;
+  font-size: 15px;
+  color: #d9d9d9;
+  background: linear-gradient(0, #636363, #9d9d9d);
+  padding: 5px;
+  position: fixed; top: 0; left: 0; right: 0;
+}
+main{
+  position: absolute; top: 35px;
+  padding: 5px;
+  color: #cdcdcd;
+}
+.swiper-container, .swiper-wrapper{
+  display: block;
+  width: calc(100vw - 10px);
+  user-select: none;
+  height: 70vh;
+  max-height: calc(100vh - 150px);
+}
+.swiper-slide:nth-child(1){
+  background-image: url('https://www.bandlab.com/web-app/images/bandlab-logotype-white-754a934926.svg');
+  background-position: 75%;
+  background-size: contain;
+  background-color: #6c6c6c;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  width: calc(100% - 25px);
+}
+.swiper-slide>p{
+  background: linear-gradient(0, #292929, rgba(0, 0, 0, 0));
+  font-size: 45px;
+  position: absolute; bottom: calc(0px - 45px); left: 0; right: 0;
+  overflow: auto;
+}
+.swiper-slide:nth-child(2){
+  background-image: url('../images/art/06.png');
+  background-position: 75%;
+  background-size: contain;
+  background-color: #6c6c6c;
+  background-repeat: no-repeat;
+  width: calc(100% - 25px);
+  padding-left: 0px;
+}
