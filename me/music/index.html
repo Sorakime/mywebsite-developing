@@ -4,25 +4,18 @@
     <meta charset="utf-8">
     <title>Music - Sorakime - SmncrS</title>
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="../../script/swiper/swiper.min.css">
-    <script src="../../script/swiper/swiper.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="script/slider.css">
+    <script src="script/slider.js" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header>
-      Music - Sorakime - SmncrS
-    </header>
+    <header>Music - Sorakime - SmncrS</header>
     <main>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><p><a href="albums/06/"><p>ambiguous. Released!</p></a></p></div>
-          <div class="swiper-slide"><p><a href="https://www.bandlab.com/sorakime/">BandLabへ</a></p></div>
-        </div>
-      </div>
+      <slide-wrapper>
+        <p><a href="albums/06/">ambiguous. Released!</a></p>
+        <p data-hide-slider><a href="https://www.bandlab.com/sorakime/">BandLabへ</a></p>
+      </slide-wrapper>
     </main>
-
-    <script>
-      var swiper = new Swiper('.swiper-container', {loop: true});
-    </script>
   </body>
 </html>
