@@ -1,0 +1,13 @@
+{
+  "name": "SmncrS",
+  "short_name": "SmncrS",
+  "icons": [{
+      "src": "./images/favi.png",
+      "sizes": "2000x2000",
+      "type": "image/png"
+  }],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#EEEEEE",
+  "theme_color": "#DDDDDD"
+}
