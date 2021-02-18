@@ -20,9 +20,17 @@
     navigator.serviceWorker.register('sw.js')
       .then((reg) => {
         console.log('Service worker registered.', reg);
-      });
-}
+      });}
     </script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+    window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "5be4c7a0-e94c-42cd-a9b0-b480eb4e4ec5",
+      });
+    });
+  </script>
   </head>
   <body>
     <header>
