@@ -1,6 +1,6 @@
 view-top{
   box-sizing: content-box;
-  display: block;
+  display: inline-block;
   width: calc(100vw - 40px);
   height: calc(100vh - 85px);
   margin: 12.5px;
@@ -15,7 +15,7 @@ view-top:hover, view-bottom:hover{
 }
 
 view-big{
-  display: block;
+  display: inline-block;
   position: relative;
   box-sizing: content-box;
   color: #262626;
@@ -29,7 +29,7 @@ view-big{
 
 view-bottom{
   box-sizing: content-box;
-  display: block;
+  display: inline-block;
   width: calc(100vw - 40px);
   height: calc(100vh - 85px);
   margin: 12.5px;
@@ -43,4 +43,12 @@ view-bottom{
 
 *{
   scroll-snap-type: y;
+}
+
+main {
+  scroll-snap-type: y mandatory;
+}
+
+view-top, view-bottom{
+  scroll-snap-align: start;
 }
