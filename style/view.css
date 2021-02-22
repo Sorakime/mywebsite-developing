@@ -40,3 +40,7 @@ view-bottom{
   transition: 0.5s 0s cubic-bezier(.45,.05,.55,.95);
   box-shadow: 20px 20px 150px #c5c5c5;
 }
+
+*{
+  scroll-snap-type: y;
+}
