@@ -1,12 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>monochrome Project. - SmncrS</title>
+    <title>monochrome Project.</title>
+
+    <meta name="description" content="monochrome Project. Sorakimeのソフトウェアなどを総括するプロジェクト。面白いソフトウェアや面白い活動中。また、ユーザにも良心的でサポートも充実です。気兼ねなく、仲良くしましょう！">
+    <link rel="index" href="/">
+
+    <link rel="shortcut icon" href="images/logo.png">
     <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/summary.css">
+    <link rel="stylesheet" href="/font/noto.css">
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style/forswiper.css">
+    <link rel="stylesheet" href="style/navbtn.css">
+    <link rel="stylesheet" href="style/navcts.css">
+    <link rel="stylesheet" href="style/link.css">
+    <meta name="viewport" content="width=device-width">
   </head>
   <body>
-    <header><p>SmncrS</p><p>Sorakime monochrome. Site</p></header>
-    <header><h1>monochrome Project.</h1></header>
+    <header id="hdr">
+      <nav-btn>
+      </nav-btn>
+      <script src="script/nav.js" charset="utf-8"></script>
+      <span></span>
+      <a href="">
+        monochrome Project.
+      </a>
+    </header>
+    <main><!--Swiper-->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!--swiper-contents-->
+          <div class="swiper-slide slide-1">
+              Litest v.2.0 Beta 2 配布開始。
+            <div>
+              <a href="https://github.com/Sorakime/Litest/tree/Beta/" id="githubbtn" target="_blank">GitHubでダウンロード(推奨)</a>
+              <a href="./project/litest/" id="ofsibtn" target="_blank">公式サイトでダウンロード</a>
+            </div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="swiper-slide slide-2">
+              このサイト公開(?)
+            <div class="swiper-button-prev"></div>
+          </div>
+          <!--swiper-contents end-->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <p>
+        <a href="about">About</a>
+        <a href="project/">Projects</a>
+        <a href="contact">Contacts</a>
+        <a href="blog/">Blogs</a>
+        <a href="other">Others</a>
+      </p>
+    </main>
+    <nav-cts>
+      <h1>Menu</h1>
+      <developer-detail>
+        <div>Sorakime</div>
+        奈良県在住の年齢顔職業不詳の謎の人。変人だったり暇人だったりって言われても仕方がない人。<br>
+        たまに作曲とかしてるけど、あまり上手くはない。Web技術が好きですかね。<br>
+        <span>
+          <a href="https://www.youtube.com/channel/UCtTYek-N2sjl_9z-GS-IjAA">YouTube</a>とか、
+          <a href="https://sorakime.theblog.me/">ブログ</a>、
+          <a href="https://instagram.com/sora_apple_superfly">Instagram</a>とか。あとは
+          <a href="https://github.com/Sorakime">わけわからんGitHub</a>。
+        </span>
+      </developer-detail>
+      <pages-view>
+        <h2>Pages List</h2>
+        <a href="about">About</a>
+        <a href="project/">Projects</a>
+        <a href="contact">Contacts</a>
+        <a href="blog/">Blogs</a>
+        <a href="other">Others</a>
+    </nav-cts>
+    <span>
+      <script src="script/swiper-bundle.min.js" charset="utf-8"></script>
+      <!--Swiper options-->
+      <script type="text/javascript">
+      var swiper = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+          delay: 4000,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: false,
+        },
+        loop: true,
+        speed: 1750,
+      })
+      </script>
+    </span>
   </body>
 </html>

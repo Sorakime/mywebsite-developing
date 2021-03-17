@@ -1,0 +1,35 @@
+nav-cts{
+  display: inline; position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: 9998; width: 0px;
+  min-width: 100px; max-width: 65vw;
+  height: 100vh; background-color: #000;
+  padding: 2px; padding-top: 50px;
+  transition: all 0.8s cubic-bezier(1,0,0,1);
+  opacity: 0; overflow: auto;
+}
+nav-cts, nav-cts *{
+  color: #cfcfcf;
+  user-select: none;
+}
+nav-cts[id="navbtn"]{ /*出現したあと*/
+  display: block;
+  width: 400px;
+  opacity: 1;
+}
+
+developer-detail, developer-detail *{
+  padding: 5px;
+}
+developer-detail > div{
+  font-size: 35px;
+  padding-left: 10px;
+  display: block;
+}
+pages-view > a{
+  display: block;
+}
+pages-view{
+  display: block;
+  margin-top: 15px;
+}

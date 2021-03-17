@@ -1,0 +1,18 @@
+p > a{
+  position: relative;
+  margin-right: 30px;
+  border-bottom: 2px solid #000;
+  user-select: none;
+}
+p, p *{
+  line-height: 2rem;
+}
+p > a::after{
+  content: '';
+  display: inline-block;
+  width: 25px; height: 25px;
+  position: absolute;
+  top: 0;
+  background-image: url('../images/go.png');
+  background-size: contain;
+}

@@ -1,0 +1,77 @@
+.swiper-container{
+  margin: auto;
+  height: calc(100vh - 52px);
+  min-height: 60vh;
+  max-height: 100vh;
+  width: calc(100vw - 20px);
+  background-color: #f9f9f9;
+}
+.slide-1::before{
+  content: 'Batch Writer v.1.1.2 配布開始。';
+  display: inline-block;
+  position: absolute;
+  filter: blur(15px);
+}
+.slide-1{
+  background-color: #fff;
+  background-image: url('../images/slides/liet-1.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 45vw 50vh;
+  user-select: none;
+  font-size: 50px;
+}
+.slide-1::before{
+  content: 'Litest v.2.0 Beta 2 配布開始。';
+  display: inline-block;
+  position: absolute;
+  filter: blur(15px);
+}
+.slide-1 a{
+  border: 5px solid #adadad;
+  border-radius: 5px;
+  background-color: #dadada;
+  color: #161616;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  border: 5px solid #adadad;
+  border-radius: 5px;
+  background-color: #dadada;
+  color: #161616;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+
+.slide-2{
+  display: inline-block;
+  background-color: #fff;
+  background-image: url('../images/slides/btwr-2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 50px;
+  user-select: none;
+  position: relative;
+  box-shadow: 5px 5px 15px #515151;
+}
+.slide-2::before{
+  content: 'このサイト公開(?)';
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  filter: blur(15px);
+}
+@media (max-width: 460px) {
+  .slide-1 > div > a{
+    display: inline-table;
+  }
+}
+#githubbtn:hover{
+  background-color: #e9e9e9;
+}
+#ofsibtn:hover{
+  background-color: #818181;
+}
