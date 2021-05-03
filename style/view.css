@@ -9,6 +9,7 @@ view-top{
   background-repeat: no-repeat;
   transition: all 0.5s 0s cubic-bezier(.45,.05,.55,.95);
   box-shadow: 20px 20px 150px #c5c5c5;
+  text-align: center;
 }
 view-top:hover, view-bottom:hover{
   box-shadow: 20px 20px 100px #989898;
@@ -39,4 +40,5 @@ view-bottom{
   background-repeat: no-repeat;
   transition: 0.5s 0s cubic-bezier(.45,.05,.55,.95);
   box-shadow: 20px 20px 150px #c5c5c5;
+  text-align: center;
 }
