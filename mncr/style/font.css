@@ -3,3 +3,7 @@
   font-family: 'Noto Sans JP','Source Code Pro',sans-serif, monospace;
   font-weight: 200;
 }
+
+h1, h2{
+  font-weight: 300;
+}
