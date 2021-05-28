@@ -33,19 +33,26 @@
         <div class="swiper-wrapper">
           <!--swiper-contents-->
           <div class="swiper-slide slide-1">
-              Litest v.2.0 Beta 2 配布開始。
+              Litest v.2.0 Beta 3  Alpha 1
             <div>
               <a href="https://github.com/Sorakime/Litest/tree/Beta/" id="githubbtn" target="_blank">GitHubでダウンロード(推奨)</a>
               <a href="./project/litest/" id="ofsibtn" target="_blank">公式サイトでダウンロード</a>
             </div>
-            <div class="swiper-button-next"></div>
           </div>
           <div class="swiper-slide slide-2">
-              このサイト公開(?)
-            <div class="swiper-button-prev"></div>
+            Vash v.1.0 Beta公開
+            <div>
+              <a href="./project/vash/" target="_blank">公式サイト</a>
+              <a href="https://github.com/Sorakime/vash"  target="_blank">GitHubへ</a>
+            </div>
+            <bottom-el>
+              cat history ls pwd rm touch vash which
+            </bottom-el>
           </div>
           <!--swiper-contents end-->
         </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
         <div class="swiper-pagination"></div>
       </div>
       <p>
@@ -92,10 +99,10 @@
         pagination: {
           el: '.swiper-pagination',
           type: 'bullets',
-          clickable: false,
+          clickable: true,
         },
         loop: true,
-        speed: 1750,
+        speed: 1000,
       })
       </script>
     </span>

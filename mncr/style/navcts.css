@@ -1,8 +1,8 @@
 nav-cts{
   display: inline; position: fixed;
   top: 0; bottom: 0; left: 0; right: 0;
-  z-index: 9998; width: 0px;
-  min-width: 100px; max-width: 65vw;
+  z-index: 0; width: 0px;
+  width: 0px;
   height: 100vh; background-color: #000;
   padding: 2px; padding-top: 50px;
   transition: all 0.8s cubic-bezier(1,0,0,1);
@@ -10,12 +10,16 @@ nav-cts{
 }
 nav-cts, nav-cts *{
   color: #cfcfcf;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 nav-cts[id="navbtn"]{ /*出現したあと*/
   display: block;
   width: 400px;
   opacity: 1;
+  z-index: 9995;
+  min-width: 100px; max-width: 65vw;
 }
 
 developer-detail, developer-detail *{
@@ -32,4 +36,7 @@ pages-view > a{
 pages-view{
   display: block;
   margin-top: 15px;
+}
+main{
+  z-index: 9990;
 }

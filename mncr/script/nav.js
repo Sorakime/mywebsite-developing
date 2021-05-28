@@ -1,4 +1,3 @@
-document.getElementsByTagName('nav-btn')[0].setAttribute('onclick','navopen();');
 function navopen() { //open navigation
   var navcts=document.getElementsByTagName('nav-cts')[0];
   document.getElementsByTagName('nav-btn')[0].setAttribute('onclick','navclose();');
@@ -9,3 +8,4 @@ function navclose() { //close navigation
   navcts.removeAttribute('id');
   document.getElementsByTagName('nav-btn')[0].setAttribute('onclick','navopen();');
 }
+document.getElementsByTagName('nav-btn')[0].setAttribute('onclick','navopen();');
