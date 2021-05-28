@@ -51,6 +51,11 @@
 .swiper-slide{
   text-shadow: 0 0 15px #000000aa;
 }
+bottom-el{
+  position: absolute;
+  bottom: 150px;
+  left: 0; right: 0;
+}
 @media (max-width: 460px) {
   .slide-1 > div > a{
     display: inline-table;
