@@ -4,7 +4,6 @@ side-bar, iframe{
   border-radius: 15px;
   padding: 5px;
   box-shadow: 0 0 15px #aaa;
-  backdrop-filter: blur(3px) brightness(150%) contrast(125%);
   width: calc(22.5vw - 15px); height: 12.5vw; text-align: right;
 }
 side-bar{
