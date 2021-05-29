@@ -7,9 +7,9 @@ view-top{
   text-align: center;
   box-sizing: content-box;
   display: block;
-  width: calc(100vw - 40px);
+  width: calc(100% - 20px);
   height: calc(100vh - 85px);
-  margin: 12.5px;
+  margin: 10px;
   background-image: url('../images/yt_cover.JPG');
   background-position: center; background-size: cover;
   background-repeat: no-repeat;
