@@ -1,6 +1,12 @@
+*{
+  overflow-x: hidden;
+}
+
+
 view-top{
+  text-align: center;
   box-sizing: content-box;
-  display: inline-block;
+  display: block;
   width: calc(100vw - 40px);
   height: calc(100vh - 85px);
   margin: 12.5px;
@@ -12,13 +18,14 @@ view-top{
   text-align: center;
 }
 view-top:hover, view-bottom:hover{
-  box-shadow: 20px 20px 100px #989898;
+  box-shadow: 20px 20px 100px #676767;
 }
 
 view-big{
-  display: inline-block;
-  position: relative;
+  text-align: center;
   box-sizing: content-box;
+  display: block;
+  position: relative;
   color: #262626;
   width: 100%;
   text-align: center;
@@ -29,7 +36,7 @@ view-big{
 }
 
 view-bottom{
-  box-sizing: content-box;
+  box-sizing: border-box;
   display: inline-block;
   width: calc(100vw - 40px);
   height: calc(100vh - 85px);

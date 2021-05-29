@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/view.css">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="images/favi.png">
-    
+
     <!--PWA-->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="gray">
@@ -17,9 +17,7 @@
     <link rel="manifest" href="manifest.json">
     <script>
       if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js')
-      .then((reg) => {
-        console.log('Service worker registered.', reg);
+        navigator.serviceWorker.register('sw.js').then((reg) => {
       });}
     </script>
   </head>
@@ -38,11 +36,6 @@
         <small><a href="treaty">Copyright &copy; 2020 Sorakime. Hosted by GitHub.</a></small>
       </footer>
     </main>
-    <style>
-      main {
-        text-align: centrer;
-      }
-      </style>
     <script src="script/onclick.js"></script>
   </body>
 </html>
