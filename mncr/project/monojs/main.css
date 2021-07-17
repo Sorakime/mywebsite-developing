@@ -61,7 +61,7 @@ main>div a::after{
 }
 
 /*for fourth*/
-#third{
+#third, #third{
   background-color: #111;
 }
 #third *{
