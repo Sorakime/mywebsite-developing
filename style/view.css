@@ -39,6 +39,7 @@ view-big{
   font-size: 45px;
   top: calc(50% - 72.5px);
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   background-color: #ffffff16;
   z-index: 9998;
   padding: 50px;

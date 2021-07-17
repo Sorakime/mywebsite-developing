@@ -64,9 +64,12 @@ main>div a::after{
 #third{
   background-color: #111;
 }
+#third *{
+  color: #ddd;
+}
 
 @media (max-width: 500px) {
-  #api{
+  #api, #third{
     width: 80vw;
     padding: 10px 10vw 15px 10vw;
   }

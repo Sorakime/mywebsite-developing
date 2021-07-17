@@ -1,8 +1,12 @@
 side-bar, iframe{
-  display: inline-block; position: fixed; right: 5px;
+  display: inline-block;
+  position: fixed;
+  right: 5px;
   border-radius: 20px;
   padding: 5px;
-  width: calc(22.5vw - 15px); height: 12.5vw; text-align: right;
+  width: calc(22.5vw - 15px);
+  height: 12.5vw;
+  text-align: right;
 }
 side-bar{
   box-shadow: 0 0 15px #aaa;
@@ -44,5 +48,11 @@ main{
   side-bar>side-content{
     left: 0; right: 0;
     top: 0px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  side-bar{
+    background-color: #11111111;
   }
 }
