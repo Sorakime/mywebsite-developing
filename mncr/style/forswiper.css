@@ -1,12 +1,28 @@
-.swiper-container{
+body{
+  overflow-x: hidden;
+}
+.slider{
+  display: inline-block;
+  position: relative;
   margin: auto;
   height: calc(100vh - 52px);
   min-height: 60vh;
   max-height: 100vh;
-  width: calc(100vw - 20px);
+  width: calc(200vw - 30px);
   background-color: #f9f9f9;
 }
-.slide-1{
+.slider>*{
+  display: inline-block;
+  height: 100vh;
+  width: calc(100vw - 15px);
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0;
+}
+.slider>*:not(:nth-child(1)){
+}
+#slide-1{
   background-color: #fff;
   background-image: url('../images/slides/litest-2.png');
   background-repeat: no-repeat;
@@ -17,7 +33,7 @@
   user-select: none;
   font-size: 50px;
 }
-.swiper-container a{
+.slider a{
   border: 5px solid #adadad;
   border-radius: 5px;
   background-color: #dadada;
@@ -32,10 +48,9 @@
   font-size: 15px;
   transition: all 0.2s ease;
 }
-.slide-2{
+#slide-2{
   display: inline-block;
   background-color: #fff;
-  /*background-image: url('../images/slides/btwr-2.png');*/
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
@@ -48,7 +63,7 @@
   position: relative;
   box-shadow: 5px 5px 15px #515151;
 }
-.swiper-slide{
+.slider *{
   text-shadow: 0 0 15px #000000aa;
 }
 bottom-el{
@@ -57,7 +72,7 @@ bottom-el{
   left: 0; right: 0;
 }
 @media (max-width: 460px) {
-  .slide-1 > div > a{
+  #slide-1 > div > a{
     display: inline-table;
   }
 }

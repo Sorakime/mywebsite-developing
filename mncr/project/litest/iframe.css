@@ -1,13 +1,14 @@
 side-bar, iframe{
   display: inline-block; position: fixed; right: 5px;
-  background-color: #55555511;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 5px;
-  box-shadow: 0 0 15px #aaa;
   width: calc(22.5vw - 15px); height: 12.5vw; text-align: right;
 }
 side-bar{
+  box-shadow: 0 0 15px #aaa;
+  background-color: #55555511;
   top: 100px;
+  height: calc(12.5vw + 32px);
 }
 side-bar>side-content{
   position: relative;
@@ -35,9 +36,6 @@ main{
     position: relative; top: 0; text-align: left;
     box-shadow: none;
     background-color: #fff;
-  }
-  iframe{
-    text-align: center;
   }
   main{
     width: 100%;

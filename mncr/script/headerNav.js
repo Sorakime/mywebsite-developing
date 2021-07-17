@@ -10,15 +10,13 @@ function navclose() { //close navigation
 }
 
 document.body.innerHTML=`<header id="hdr">
-  <nav-btn onclick="navopen();">
-  </nav-btn>
+  <nav-btn onclick="navopen();"></nav-btn>
   <span></span>
   <a href="/mncr/">
     monochrome Project.
   </a>
 </header>
 <nav-cts>
-  <h1>Menu</h1>
   <developer-detail>
     <div>Sorakime</div>
     奈良県在住の年齢顔職業不詳の謎の人。変人だったり暇人だったりって言われても仕方がない人。<br>

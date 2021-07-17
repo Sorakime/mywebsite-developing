@@ -2,7 +2,7 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Litest 2.0.0 Beta 3 Alpha 3 by monochrome. - monochrome.</title>
+    <title>Litest 2.0 Beta 3 Alpha 1 by monochrome. - monochrome.</title>
     <link rel="shortcut icon" href="/mncr/images/logo.png">
     <link rel="stylesheet" href="../../style/header.css">
     <link rel="stylesheet" href="../../style/summary.css">
@@ -16,9 +16,8 @@
   </head>
   <body>
     <main>
-      <h1>Litest v.2.0 Beta 3 Alpha 3 by monochrome.</h1>
+      <h1>Litest v.2.0 Beta 3 by monochrome.</h1>
       <p>らいてすと。ベータだよ</p>
-      <p>I wasn't create the page of beta 3 alpha 2. I won't create it.</p>
       <h2>このソフトについて</h2>
       <table>
         <tr>
@@ -27,7 +26,7 @@
         </tr>
         <tr>
           <td>OS</td>
-          <td>macOS(Arm64, x64), Windows(Arm64, x64) Linuxはめんどくさかったのでやりませんでした(正直)</td>
+          <td>macOS(Arm64, x64), Windows(Arm64, x64), Linux(Arm64)</td>
         </tr>
         <tr>
           <td>ビット</td>
@@ -42,7 +41,7 @@
           <td>Electron</td>
         </tr>
       </table>
-      <h3>Windows</h3>
+      <h3>Windowsの場合</h3>
       <table>
         <tr>
           <td>ビルド環境</td>
@@ -55,59 +54,58 @@
           <td></td><td>8GB DDR3 RAM</td>
         </tr>
         <tr>
-          <td></td><td>500GB HDD</td>
+          <td></td><td>500GB HDD(GitHubには512GBって書いてますけど正しくはこっちです)</td>
         </tr>
         <tr>
           <td>ソフトの環境</td>
-          <td>Node.js v.15.9.0</td>
+          <td>Node.js v.14.15.4</td>
         </tr>
         <tr>
-          <td></td><td>npm 7.5.3</td>
+          <td></td><td>Electron v.12.0.9</td>
         </tr>
         <tr>
-          <td></td><td>Electron v.13.1.4</td>
+          <td></td><td>Electron Builder v.22.10.54</td>
         </tr>
         <tr>
-          <td></td><td>Electron Builder v.22.11.7</td>
-        </tr>
-        <tr>
-          <td>(動くとは言っていない)OS</td>
+          <td>(動くとは言っていない)動作OS</td>
           <td>Windows 10 1703 64bit</td>
         </tr>
       </table>
-      <h3>macOS</h3>
+      <h3>macOSおよびLinuxの場合</h3>
       <table>
         <tr>
           <td>ビルド環境</td>
-          <td>MacBook Air(13-inch, Mid 2011)</td>
+          <td><a href="https://support.apple.com/kb/SP576?locale=ja_JP&viewlocale=ja_JP">iMac (21.5-inch, Late 2009)最低モデル</a></td>
         </tr>
         <tr>
-          <td></td><td>メモリ8GB</td>
-        </tr>
-        <tr>
-          <td></td><td>Core i5-2557M</td>
+          <td></td>
+          <td>メモリ12GBへ増設済み</td>
         </tr>
         <tr>
           <td>PCの環境</td><td>macOS High Sierra 10.13.6</td>
         </tr>
         <tr>
-          <td></td><td>Node.js v.14.15.0</td>
+          <td></td><td>Node.js v.14.15.4</td>
         </tr>
         <tr>
-          <td></td><td>npm v.6.14.8</td>
+          <td></td><td>Electron v.12.0.9</td>
         </tr>
         <tr>
-          <td>(動くかは知らない)OS</td>
+          <td></td><td>Electron Builder v.22.10.54</td>
+        </tr>
+        <tr>
+          <td>(動くかは知らない)動作OS</td>
           <td>OS X Mountain Lion 10.8</td>
         </tr>
       </table>
+      <h6>バージョン不揃いとかいうてましたが全部揃えました。</h6>
       <h2>ダウンロード</h2>
-      <p>ダウンロード。パッケージはmacOSのdmgファイル、WindowsのExeインストーラが用意されています。Electronで開発されているので、再ビルド可能ですし改造したら<a href="/mncr/license.html">monochrome. License</a>に沿う形であればいくら自由に配布してもらってもOKです。</p>
+      <p>ダウンロード。パッケージはmacOSのdmgファイル、WindowsのExeインストーラ、そして新しくArm64のLinux向けAppImageパッケージ。Electronで開発されているので、再ビルド可能ですし改造したら<a href="/mncr/license.html">monochrome. License</a>に沿う形であればいくら自由に配布してもらってもOKです。</p>
       <p>また、ダウンロードはGitHubから直接ダウンロードさせています。</p>
       <ul>
-        <li><a href="https://github.com/Sorakime/Litest/releases/download/build13/Litest.zip">macOS用dmg</a></li>
-        <li><a href="https://github.com/Sorakime/Litest/releases/download/build13/Litest13-install.exe">Windows用インストーラ</a></li>
-        <li><a href="https://github.com/Sorakime/Litest/releases/download/build13/Litest13-portable.zip">Windows用ポータブル</a></li>
+        <li><a href="https://github.com/Sorakime/Litest/releases/download/2.0.0Beta3Alpha1/Litest11-install.dmg">macOS用dmg</a></li>
+        <li><a href="https://github.com/Sorakime/Litest/releases/download/2.0.0Beta3Alpha1/Litest11-install.exe">Windows用Exeインストーラ</a></li>
+        <li><a href="https://github.com/Sorakime/Litest/releases/download/2.0.0Beta3Alpha1/Litest11-install.AppImage">Arm Linux向けAppImage</a></li>
       </ul>
 
       <side-bar>

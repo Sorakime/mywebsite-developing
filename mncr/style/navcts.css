@@ -1,9 +1,11 @@
 nav-cts{
-  display: inline; position: fixed;
-  top: 0; bottom: 0; left: 0; right: 0;
-  z-index: 0; width: 0px;
-  width: 0px;
-  height: 100vh; background-color: #000;
+  display: inline-block;
+  position: fixed;
+  top: 0; bottom: 0; left: -410px; right: 0;
+  z-index: 9998;
+  width: 400px; max-width: 65vw; min-width: 100px;
+  height: 100vh;
+  background-color: #000000;
   padding: 2px; padding-top: 50px;
   transition: all 0.8s cubic-bezier(1,0,0,1);
   opacity: 0; overflow: auto;
@@ -14,12 +16,27 @@ nav-cts, nav-cts *{
   -ms-user-select: none;
   user-select: none;
 }
-nav-cts[id="navbtn"]{ /*出現したあと*/
+nav-cts#navbtn{
   display: block;
   width: 400px;
-  opacity: 1;
-  z-index: 9995;
   min-width: 100px; max-width: 65vw;
+  opacity: 1;
+  z-index: 9998;
+  left: 0;
+}
+nav-cts::before{
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0; left: -100vw;
+  background-color: #000000b5;
+  width: 100vw; height: 100vh;
+  z-index: -5;
+  transition: all 0.5s cubic-bezier(1,0,0,1);
+}
+nav-cts#navbtn::before{
+  left: 0;
+  z-index: -5;
 }
 
 developer-detail, developer-detail *{
@@ -39,4 +56,17 @@ pages-view{
 }
 main{
   z-index: 9990;
+}
+
+nav-cts a{
+  transition: all 0.2s ease-in-out;
+}
+nav-cts a:hover{
+  color: #58c0ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  nav-cts{
+    background-color: #585858;
+  }
 }

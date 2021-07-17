@@ -11,72 +11,49 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/summary.css">
     <link rel="stylesheet" href="/mncr/style/font.css">
-    <link rel="stylesheet" href="style/swiper-bundle.min.css">
-    <link rel="stylesheet" href="style/forswiper.css">
     <link rel="stylesheet" href="style/navbtn.css">
     <link rel="stylesheet" href="style/navcts.css">
     <link rel="stylesheet" href="style/link.css">
+    <link rel="stylesheet" href="style/introduction.css">
     <meta name="viewport" content="width=device-width">
+    <script src="./script/preload.js"></script>
+    <style media="screen">
+      body>main>p:last-child{
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <main><!--Swiper-->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <!--swiper-contents-->
-          <div class="swiper-slide slide-1">
-              Litest v.2.0 Beta 3  Alpha 1
-            <div>
-              <a href="https://github.com/Sorakime/Litest/tree/Beta/" id="githubbtn" target="_blank">GitHubでダウンロード(推奨)</a>
-              <a href="./project/litest/" id="ofsibtn" target="_blank">公式サイトでダウンロード</a>
-            </div>
-          </div>
-          <div class="swiper-slide slide-2">
-            Vash v.1.0 Beta公開
-            <div>
-              <a href="./project/vash/" target="_blank">公式サイト</a>
-              <a href="https://github.com/Sorakime/vash"  target="_blank">GitHubへ</a>
-            </div>
-            <bottom-el>
-              cat history ls pwd rm touch vash which
-            </bottom-el>
-          </div>
-          <!--swiper-contents end-->
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-pagination"></div>
-      </div>
+    <main>
+      <a href="./project/litest/">
+        <intro-duction id="litest">
+          <h1>Litest <p class="tag">2.0.0 B3A3</h1>
+          <p>軽くてすぐに起動するツール。</p>
+        </intro-duction>
+      </a>
+      <a href="./project/monojs/">
+        <intro-duction id="monojs">
+          <h1>monoJS<p class="tag">1.0 Beta1</p></h1>
+          <p>単純で、バニラJSとも共存。</p>
+        </intro-duction>
+      </a>
+      <a href="./project/vash">
+        <intro-duction id="vash">
+          <h1>Vash<p class="tag">1.0 Beta1</p></h1>
+          <p>WindowsでもBashライクなコマンドを。てか、ロゴダサくね？</p>
+        </intro-duction>
+      </a>
       <p>
         <a href="about">About</a>
         <a href="project/">Projects</a>
-        <a href="contact">Contacts</a>
-        <a href="blog/">Blogs</a>
-        <a href="other">Others</a>
+        <!--a href="contact">Contact</a>
+        <a href="other">Other</a-->
       </p>
     </main>
 
     <span>
-      <script src="script/swiper-bundle.min.js" charset="utf-8"></script>
-      <!--Swiper options-->
-      <script type="text/javascript">
-      var swiper = new Swiper('.swiper-container', {
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        autoplay: {
-          delay: 4000,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
-          clickable: true,
-        },
-        loop: true,
-        speed: 1000,
-      })
-      </script>
-      <script src="./script/headerNav.js" charset="utf-8"></script>
+      <script src="./script/headerNav.js"></script>
+
     </span>
   </body>
 </html>
