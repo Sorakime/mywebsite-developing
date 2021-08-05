@@ -118,11 +118,11 @@ nav-cts, nav-cts *{
   background: linear-gradient(45deg, #ff7415, #ffac57);
 }
 #speed-graph div[data-browser="edge"]{
-  width: calc(71.43% - 5px);
+  width: calc(25% - 5px);
   background: linear-gradient(45deg, #0c29a1, #53a7ff);
 }
 #speed-graph div[data-browser="monot"]{
-  width: calc(42.86% - 5px);
+  width: calc(20% - 5px);
   background: linear-gradient(45deg, #909090, #fff);
 }
 
