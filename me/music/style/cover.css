@@ -6,7 +6,7 @@ album-cover{
   border-radius: 5px;
   overflow: hidden;
   top: 0; left: 0;
-  transition: border-radius 0.2s ease-in-out;
+  transition: border-radius 0.1s ease-in-out;
 }
 album-cover::before{
   content: '';
@@ -20,9 +20,19 @@ album-cover::before{
   z-index: -1;
   background-color: #494949;
   border-radius: inherit;
-  filter: blur(10px) brightness(75%);
+  filter: blur(5px) brightness(50%);
   background-size: cover;
   background-position: center;
+}
+album-cover::after{
+  content: '';
+  transition: all 0.3s ease-in-out;
+  display: block;
+  position: absolute;
+  bottom: -40%; left: 0; right: 0;
+  width: 100%; height: 40%;
+  background: linear-gradient(#0000, #0009);
+  z-index: -1;
 }
 album-cover *{
   user-select: none;
@@ -44,10 +54,10 @@ album-cover:hover{
   border-radius: 10px;
 }
 album-cover:hover::before{
-  filter: blur(5px) brightness(110%);
-}
-album-cover:active::before{
   filter: none;
+}
+album-cover:hover::after{
+  bottom: 0;
 }
 
 /*for summary-2020*/
@@ -79,11 +89,18 @@ album-cover:active::before{
 #return-single::before{
   background-image: url('../images/art/02.jpg');
 }
-#return-single *{
-  color: #000;
-}
 
-@media (orientation: portrait) and (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 600px) {
+  album-cover{
+    width: calc(33.3vmin - 15px); height: calc(33.3vmin - 15px);
+  }
+}
+@media (max-width: 670px) and (min-width: 520px) {
+  album-cover{
+    width: calc(45vmin + 10px); height: 47vmin;
+  }
+}
+@media (orientation: portrait) and (max-width: 520px){
   body{
     overflow-x: hidden;
   }

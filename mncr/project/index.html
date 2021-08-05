@@ -2,40 +2,63 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>monochrome Project.</title>
+    <title>Projects - monochrome Project.</title>
 
-    <meta name="description" content="monochrome Project. Sorakimeのソフトウェアなどを総括するプロジェクト。面白いソフトウェアや面白い活動中。また、ユーザにも良心的でサポートも充実です。気兼ねなく、仲良くしましょう！">
+    <meta name="description" content="monochrome Project. Sorakimeのソフトウェアなどを総括するプロジェクト。LitestやmonoJSなどが代表作。">
     <link rel="index" href="/">
 
     <link rel="shortcut icon" href="../images/logo.png">
     <link rel="stylesheet" href="../style/header.css">
     <link rel="stylesheet" href="../style/summary.css">
     <link rel="stylesheet" href="/mncr/style/font.css">
-    <link rel="stylesheet" href="../style/forswiper.css">
     <link rel="stylesheet" href="../style/navbtn.css">
     <link rel="stylesheet" href="../style/navcts.css">
-    <link rel="stylesheet" href="../style/link.css">
     <link rel="stylesheet" href="../style/project.css">
+    <link rel="stylesheet" href="/mncr/style/introduction.css">
     <meta name="viewport" content="width=device-width">
+    <style media="screen">
+      main *{
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <main>
       <h1>Projects</h1>
-      <ul>
-        <li><a href="litest/">Litest</a></li>
-        <li><a href="vash/">Vash</a></li>
-        <li><a href="monojs/">monoJS</a></li>
-      </ul>
-      <hr>
-      <p>
-        <a href="../about">About</a>
-        <a href="../project/">Projects</a>
-        <a href="../contact">Contacts</a>
-        <a href="../blog/">Blogs</a>
-        <a href="../other">Others</a>
-      </p>
+      <a href="litest/">
+        <intro-duction id="litest">
+          <div>
+            <h1>Litest <p class="tag">2.0.0 B3A3</h1>
+            <p>軽くてすぐ起動するツール</p>
+          </div>
+        </intro-duction>
+      </a>
+      <a href="monojs/">
+        <intro-duction id="monojs">
+          <div>
+            <h1>monoJS<p class="tag">1.0 Beta1</p></h1>
+            <p>単純で、バニラJSとも共存。</p>
+          </div>
+        </intro-duction>
+      </a>
+      <a href="monot/">
+        <intro-duction id="monot">
+          <div>
+            <h1>Monot <p class="tag">1.0 Beta 1</p></h1>
+            <p>スリムで高機能<span style="font-size: 10px;">(になる予定の)</span>なブラウザ。</p>
+          </div>
+        </intro-duction>
+      </a>
+      <a href="vash">
+        <intro-duction id="vash">
+          <div>
+            <h1>Vash<p class="tag">1.0 Beta1</p></h1>
+            <p>WindowsでもBashライクなコマンドを。てか、ロゴダサくね？</p>
+          </div>
+        </intro-duction>
+      </a>
     </main>
     <script src="../script/headerNav.js"></script>
-    <script src="../script/preload.js" charset="utf-8"></script>
+    <script src="../script/preload.js"></script>
   </body>
 </html>

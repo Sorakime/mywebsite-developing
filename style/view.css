@@ -1,31 +1,18 @@
-*{
-  overflow-x: hidden;
-}
-
-
-view-top{
+view-top, view-bottom{
   text-align: center;
   box-sizing: content-box;
-  display: inline-block;
+  display: block;
   width: 100%;
   height: calc(100vh - 60px);
-  background-image: url('../images/yt_cover.JPG');
   background-position: center; background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 20px 20px 150px #c5c5c5;
   margin: 0;
+}
+view-top{
+  background-image: url('../images/yt_cover.JPG');
 }
 view-bottom{
-  text-align: center;
-  box-sizing: content-box;
-  display: inline-block;
-  width: 100%;
-  height: calc(100vh - 60px);
-  background-position: center; background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: 20px 20px 150px #c5c5c5;
-  background-image: url('../images/mncr_logo.png');
-  margin: 0;
+  background-image: url('../images/mncr_logo.jpg');
 }
 
 view-big{
@@ -40,10 +27,16 @@ view-big{
   top: calc(50% - 72.5px);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  background-color: #ffffff16;
+  background-color: #fff3;
   z-index: 9998;
   padding: 50px;
   user-select: none;
   border-radius: 15px;
   font-weight: 300;
+}
+
+@media (prefers-color-scheme: dark){
+  view-big{
+    background-color: #0003;
+  }
 }

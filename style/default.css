@@ -3,7 +3,6 @@
 body{
   margin: 0; padding: 0; border: 0;
   box-sizing: border-box;
-
 }
 *{
   font-family: 'Noto Sans JP',sans-serif;
@@ -17,9 +16,11 @@ header{
   top: 0; left: 0; right: 0;
   padding-left: 10px;
   height: 60px;
-  background-color: #eee;
+  background-color: #fff4;
   z-index: 9999;
   user-select: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 header > h1 > span{
   display: inline;
@@ -57,4 +58,22 @@ h5{
 }
 h6{
   font-size: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body{
+    background-color: #000;
+  }
+  header{
+    background-color: #0004;
+  }
+  header *{
+    color: #fff;
+  }
+  *{
+    color: #fff;
+  }
+  a{
+    color: lightblue;
+  }
 }

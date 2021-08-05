@@ -1,3 +1,6 @@
+main{
+  text-align: center;
+}
 main>div{
   display: block;
   width: 100%;
@@ -6,10 +9,6 @@ main>div{
   max-height: 950px;
   text-align: center;
   background: #444;
-}
-main>div *{
-  user-select: none;
-  -ms-user-select: none;
 }
 main>div a::after{
   content: '';
@@ -50,7 +49,7 @@ main>div a::after{
 /*for api list*/
 #api, #third{
   background-color: #262626aa;
-  width: 40vw;
+  width: calc(40vw - 20px);
   text-align: left;
   padding: 10px 30vw;
   height: auto;
@@ -72,5 +71,10 @@ main>div a::after{
   #api, #third{
     width: 80vw;
     padding: 10px 10vw 15px 10vw;
+  }
+}
+@media (orientation: portrait) {
+  #top::before{
+    margin-top: 10vh;
   }
 }

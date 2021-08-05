@@ -1,6 +1,6 @@
 function view(id){
-  document.getElementById(id).scrollIntoView({
+  document.querySelector(id).scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
