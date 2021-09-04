@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap');
 /*body and, general settings*/
+:root, *{
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #888;
+}
 body{
   margin: 0; padding: 0; border: 0;
   box-sizing: border-box;
@@ -8,6 +13,9 @@ body{
   font-family: 'Noto Sans JP',sans-serif;
   font-weight: 100;
   margin: 0; padding: 0;
+}
+a{
+  color: darkblue;
 }
 
 /*header and, main, footer*/
@@ -19,6 +27,7 @@ header{
   background-color: #fff4;
   z-index: 9999;
   user-select: none;
+  box-shadow: 0 0 20px #0007;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -30,12 +39,6 @@ main{
   display: block; position: absolute;
   top: 60px; left: 0; right: 0;
   z-index: 1000;
-}
-footer{
-  display: block;
-  position: relative;
-  padding: 5px;
-  text-align: center;
 }
 
 /*charcter tags*/
@@ -60,6 +63,38 @@ h6{
   font-size: 14px;
 }
 
+/*for <footer>*/
+footer{
+  display: block;
+  position: relative;
+  padding: 5px 25%;
+  background-image: url('/images/yt_icon-blur.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 50%;
+  text-align: left;
+  backdrop-filter: blur(50px) contrast(50%) brightness(75%);
+  -webkit-backdrop-filter: blur(50px) contrast(50%) brightness(75%);
+}
+footer>div{
+  display: flex;
+}
+footer div span{
+  display: inline-block;
+  width: 100%;
+}
+footer div span{
+  margin: 0 7.5px;
+}
+footer h4{
+  font-weight: 300;
+}
+footer a{
+  text-decoration: none;
+  color: lightblue;
+}
+
 @media (prefers-color-scheme: dark) {
   body{
     background-color: #000;
@@ -75,5 +110,12 @@ h6{
   }
   a{
     color: lightblue;
+  }
+}
+
+@media (max-width: 720px) {
+  footer{
+    width: calc(100% - 20px);
+    padding: 5px 10px;
   }
 }

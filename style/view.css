@@ -1,17 +1,26 @@
-view-top, view-bottom, view-chicken{
+view-top, view-bottom{
   text-align: center;
   box-sizing: content-box;
   display: block;
-  width: 100%;
-  height: calc(100vh - 60px);
+  width: calc(100% - 50px);
+  height: calc(100vh - 110px);
   background-position: center; background-size: cover;
   background-repeat: no-repeat;
-  margin: 0;
+  margin: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 50px #eee;
+  transition: all 0.5s ease-in-out;
 }
+
+view-top:hover, view-bottom:hover{
+  box-shadow: 0 0 50px #aaa;
+}
+
 view-top{
   background-image: url('../images/yt_cover.JPG');
 }
 view-bottom{
+  margin-top: 50px;
   background-image: url('../images/mncr_logo.jpg');
 }
 
@@ -35,8 +44,18 @@ view-big{
   font-weight: 300;
 }
 
+footer{
+  background: none;
+}
+
 @media (prefers-color-scheme: dark){
   view-big{
     background-color: #0003;
+  }
+  view-top, view-bottom{
+    box-shadow: 0 0 50px #555;
+  }
+  view-top:hover, view-bottom:hover{
+    box-shadow: 0 0 50px #777;
   }
 }
