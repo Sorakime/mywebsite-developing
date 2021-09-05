@@ -1,0 +1,192 @@
+*{
+  text-align: center;
+}
+h1 span.tag{
+  font-size: 12px;
+}
+nav-cts, nav-cts *{
+  text-align: left;
+}
+
+#top a::after, #download a::after{
+  content: none;
+}
+
+#top{
+  display: block;
+  position: relative;
+  height: calc(100vh - 50px);
+  background-color: #fafafa;
+  background-image: url('/mncr/images/monot/top.jpg');
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#top *{
+  color: #000;
+  font-weight: 500;
+}
+#top div{
+  position: absolute;
+  bottom: 10vh; left: 0; right: 0;
+}
+
+#thin{
+  position: relative;
+  display: block;
+  top: 0; left: 0; right: 0;
+  background-color: #333;
+  box-sizing: content-box;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 15px;
+}
+#thin *{
+  text-align: center;
+  color: #fff;
+  word-break: break-all;
+}
+#thin div{
+  position: relative;
+  display: block;
+  left: 12.5vw; right: 12.5vw;
+  margin-top: 50px;
+  width: 75vw;
+  height: 24vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url('/mncr/images/monot/thin.jpg');
+}
+
+#design{
+  padding-top: 50px;
+  display: block;
+  position: relative;
+  background-color: #efefef;
+  height: auto;
+}
+#design *{
+  color: #000;
+}
+#design div{
+  position: relative;
+  display: inline-block;
+  width: 100%; height: 25vw;
+  background-image: url('/mncr/images/monot/icons.jpg');
+  background-position: center;
+  background-size: contain;
+}
+#design div::before, #design div::after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 30vw;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+}
+#design div::before{
+  left: 0;
+}
+#design div::after{
+  right: 0;
+}
+
+#speed{
+  height: 350px;
+  padding-top: 50px;
+}
+#speed #speed-graph{
+  display: block;
+  position: relative;
+  top: 50px; left: 25%; right: 25%;
+  width: 50%; height: auto;
+}
+#speed-graph div{
+  height: 30px;
+  text-align: right;
+  padding-right: 5px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  color: #000;
+  border-radius: 0 5px 5px 0;
+}
+#speed-graph div[data-browser="firefox"]{
+  width: calc(100% - 5px);
+  background: linear-gradient(45deg, #ff7415, #ffac57);
+}
+#speed-graph div[data-browser="edge"]{
+  width: calc(25% - 5px);
+  background: linear-gradient(45deg, #0c29a1, #53a7ff);
+}
+#speed-graph div[data-browser="monot"]{
+  width: calc(20% - 5px);
+  background: linear-gradient(45deg, #909090, #fff);
+}
+
+#I-am-going-to{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+  background-color: #fff;
+  overflow: auto;
+}
+#I-am-going-to *{
+  color: #000;
+}
+#I-am-going-to div{
+  display: inline-block;
+  width: 430px;
+  height: auto;
+}
+#I-am-going-to div>ul *{
+  text-align: left;
+}
+#I-am-going-to li{
+  margin-bottom: 5px;
+}
+#I-am-going-to div>ul>li span{
+  background-color: #333;
+  color: #fff;
+  font-size: 12.5px;
+  border-radius: 2.5px;
+}
+
+#download{
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-bottom: 50px;
+}
+#download *{
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  #thin div{
+    width: 100%;
+    left: 0; right: 0;
+    height: 50vw;
+    background-size: 160vw;
+  }
+  #speed #speed-graph, #speed>#speed-graph{
+    width: 80%; left: 10%; right: 10%;
+  }
+  #download{
+    width: 90%;
+    margin-left: 5%; margin-right: 5%;
+  }
+}
+@media (orientation: portrait){
+  #top, #top{
+    height: 40vh;
+    background-size: 150%;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  #top div{
+    bottom: 20px;
+  }
+}
