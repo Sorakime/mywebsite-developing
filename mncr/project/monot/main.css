@@ -1,5 +1,9 @@
 *{
   text-align: center;
+  scroll-behavior: smooth;
+}
+b{
+  font-weight: 600;
 }
 h1 span.tag{
   font-size: 12px;
@@ -18,7 +22,7 @@ nav-cts, nav-cts *{
   height: calc(100vh - 50px);
   background-color: #fafafa;
   background-image: url('/mncr/images/monot/top.jpg');
-  background-position: center bottom;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -28,7 +32,19 @@ nav-cts, nav-cts *{
 }
 #top div{
   position: absolute;
-  bottom: 10vh; left: 0; right: 0;
+  width: auto;
+  bottom: 8vh; left: 0; right: 0;
+}
+#top div>div{
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  top: 0; left: 0;
+  width: auto; height: auto;
+  text-align: left;
+}
+#top div>div>h6{
+  text-align: left;
 }
 
 #thin{
@@ -53,7 +69,7 @@ nav-cts, nav-cts *{
   margin-top: 50px;
   width: 75vw;
   height: 24vw;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   background-image: url('/mncr/images/monot/thin.jpg');
@@ -105,53 +121,76 @@ nav-cts, nav-cts *{
   width: 50%; height: auto;
 }
 #speed-graph div{
-  height: 30px;
-  text-align: right;
+  position: relative;
+  height: 10px;
   padding-right: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   font-weight: 400;
   color: #000;
   border-radius: 0 5px 5px 0;
 }
-#speed-graph div[data-browser="firefox"]{
-  width: calc(100% - 5px);
-  background: linear-gradient(45deg, #ff7415, #ffac57);
+#speed-graph div::before{
+  text-align: left;
+  position: absolute;
+  left: 0; top: -25px;
+  color: #fff;
 }
 #speed-graph div[data-browser="edge"]{
-  width: calc(25% - 5px);
+  width: calc(100% - 5px);
   background: linear-gradient(45deg, #0c29a1, #53a7ff);
 }
+#speed-graph div[data-browser="edge"]::before{
+  content: 'Microsoft Edge / 1.6秒';
+}
+#speed-graph div[data-browser="firefox"]{
+  width: calc(87.5% - 5px);
+  background: linear-gradient(45deg, #ff7415, #ffac57);
+}
+#speed-graph div[data-browser="firefox"]::before{
+  content: 'Mozilla Firefox / 1.4秒';
+}
 #speed-graph div[data-browser="monot"]{
-  width: calc(20% - 5px);
+  width: calc(62.5% - 5px);
   background: linear-gradient(45deg, #909090, #fff);
 }
+#speed-graph div[data-browser="monot"]::before{
+  content: 'Monot / 1.0秒';
+}
 
-#I-am-going-to{
-  padding-top: 25px;
-  padding-bottom: 25px;
+#simple-menu{
+  padding: 20px;
+  background-color: #ddd3;
+}
+#simple-menu div{
+  margin: 0 auto;
+  width: 400px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('/mncr/images/monot/contextmenu.jpg');
+}
+
+#review{
+  background-color: #ddd2;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+#review>div{
+  display: flex;
+  width: 70vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+#review>div>*{
   width: 100%;
-  background-color: #fff;
-  overflow: auto;
+  margin: 15px;
 }
-#I-am-going-to *{
-  color: #000;
-}
-#I-am-going-to div{
-  display: inline-block;
-  width: 430px;
-  height: auto;
-}
-#I-am-going-to div>ul *{
+#review>div *{
   text-align: left;
 }
-#I-am-going-to li{
-  margin-bottom: 5px;
-}
-#I-am-going-to div>ul>li span{
-  background-color: #333;
-  color: #fff;
-  font-size: 12.5px;
-  border-radius: 2.5px;
+#review>div i{
+  display: block;
+  text-align: right;
 }
 
 #download{
@@ -162,9 +201,19 @@ nav-cts, nav-cts *{
 }
 #download *{
   text-align: left;
+  margin-top: 5px;
+  color: #bbb;
+}
+#download h1{
+  color: #fff!important;
 }
 
-@media (max-width: 800px) {
+#download *.new *{
+  color: #fff!important;
+  font-weight: 400;
+}
+
+@media (max-width: 1000px) {
   #thin div{
     width: 100%;
     left: 0; right: 0;

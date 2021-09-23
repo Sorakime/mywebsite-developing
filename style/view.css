@@ -1,10 +1,17 @@
+body, main{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
 view-top, view-bottom{
   text-align: center;
-  box-sizing: content-box;
   display: block;
+  position: relative;
   width: calc(100% - 50px);
   height: calc(100vh - 110px);
-  background-position: center; background-size: cover;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 25px;
   border-radius: 15px;
@@ -29,18 +36,20 @@ view-big{
   box-sizing: content-box;
   display: inline-block;
   position: relative;
-  color: #262626;
+  color: #000;
   width: auto;
+  max-width: calc(100vw - 80px)!important;
   text-align: center;
   font-size: 45px;
-  top: calc(50% - 72.5px);
+  top: 50%;
+  transform: translate(0, -50%);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   background-color: #fff3;
   z-index: 9998;
   padding: 50px;
   user-select: none;
-  border-radius: 15px;
+  border-radius: 25px;
   font-weight: 300;
 }
 
@@ -51,11 +60,25 @@ footer{
 @media (prefers-color-scheme: dark){
   view-big{
     background-color: #0003;
+    color: #fff;
   }
   view-top, view-bottom{
     box-shadow: 0 0 50px #555;
   }
   view-top:hover, view-bottom:hover{
     box-shadow: 0 0 50px #777;
+  }
+}
+
+@media (max-width: 720px) {
+  main, main>div:nth-child(1){
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 640px) {
+  view-big{
+    padding: 15px;
+    font-size: 35px;
   }
 }

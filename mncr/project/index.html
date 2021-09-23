@@ -4,8 +4,22 @@
     <meta charset="utf-8">
     <title>Projects - monochrome Project.</title>
 
-    <meta name="description" content="monochrome Project. Sorakimeのソフトウェアなどを総括するプロジェクト。LitestやmonoJSなどが代表作。">
-    <link rel="index" href="/">
+    <meta name="description" content="monochrome Project. Sorakimeのソフトウェアなどを総括するプロジェクト。MonotやLitestなどが代表作。">
+    <link rel="index" href="/mncr/">
+    <meta name="keywords" content="Monot, Sorakime, monochrome Project., monochrome., Sora, Litest, sorakime, monot, litest">
+    <meta property="og:url" content="https://sorakime.github.io/mncr/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="monochrome Project. Site">
+    <meta property="og:image" content="/images/mncr_ogp.jpg">
+    <meta property="og:title" content="Sorakimeが展開するmonochrome Project.の公式サイトです。">
+    <meta property="og:description" content="Twitterなどにいてるソフトウェア好きなSorakimeさんが展開する、monochrome Project.の公式サイト。MonotやLitestなどが代表作。">
+    <!--for Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="monochrome Project.">
+    <meta name="twitter:title" content="Sorakimeが展開するmonochrome Project.の公式サイトです。">
+    <meta name="twitter:description" content="Twitterなどにいてるソフトウェア好きなSorakimeさんが展開する、monochrome Project.の公式サイト。MonotやLitestなどが代表作。">
+    <meta name="twitter:image" content="/images/mncr_ogp.jpg">
+    <meta name="twitter:url" content="https://sorakime.github.io/mncr/">
 
     <link rel="shortcut icon" href="../images/logo.png">
     <link rel="stylesheet" href="../style/header.css">
@@ -24,7 +38,14 @@
   </head>
   <body>
     <main>
-      <h1>Projects</h1>
+      <a href="monot/">
+        <intro-duction id="monot">
+          <div>
+            <h1>Monot <p class="tag">1.0 Beta 1</p></h1>
+            <p>生活に寄り添うようなブラウザ。</p>
+          </div>
+        </intro-duction>
+      </a>
       <a href="litest/">
         <intro-duction id="litest">
           <div>
@@ -41,14 +62,6 @@
           </div>
         </intro-duction>
       </a>
-      <a href="monot/">
-        <intro-duction id="monot">
-          <div>
-            <h1>Monot <p class="tag">1.0 Beta 1</p></h1>
-            <p>スリムで高機能<span style="font-size: 10px;">(になる予定の)</span>なブラウザ。</p>
-          </div>
-        </intro-duction>
-      </a>
       <a href="vash">
         <intro-duction id="vash">
           <div>
@@ -60,5 +73,8 @@
     </main>
     <script src="../script/headerNav.js"></script>
     <script src="../script/preload.js"></script>
+    <script>
+      document.getElementsByTagName('header')[0].innerHTML=`${document.getElementsByTagName('header')[0].innerHTML}<p style="float: right; margin-right: 15px;">Projects</p>`
+    </script>
   </body>
 </html>

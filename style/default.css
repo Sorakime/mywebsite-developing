@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;500&display=swap');
 /*body and, general settings*/
 :root, *{
   scroll-behavior: smooth;
@@ -117,5 +117,37 @@ footer a{
   footer{
     width: calc(100% - 20px);
     padding: 5px 10px;
+  }
+  main, main>div:nth-child(1){
+    width: calc(100% - 30px);
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer, footer small{
+    position: relative;
+    background: none;
+    text-align: left;
+  }
+  footer small{
+    position: absolute;
+    display: block;
+    left: 0; bottom: 0; right: 0;
+    text-align: center;
+  }
+  footer>div{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  footer>div>span{
+    display: inline;
+  }
+
+  footer>div>span h4{
+    display: block;
   }
 }

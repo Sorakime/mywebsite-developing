@@ -13,3 +13,9 @@ p{
 table *{
   font-weight: 300;
 }
+
+i a::after{
+  left: 5px;
+  transform: rotate(6deg);
+  top: -3px;
+}
